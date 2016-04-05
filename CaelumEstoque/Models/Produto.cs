@@ -10,7 +10,7 @@ namespace CaelumEstoque.Models
     {
         public int Id { get; set; }
 
-        [Required, StringLength(20)]
+        [StringLength(20)]
         public String Nome { get; set; }
 
         [Range(0, 10000, ErrorMessage = "Preço deve ser entre 0 e 10000")]
